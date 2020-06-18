@@ -5,9 +5,10 @@ Returns: an integer
 def eating_cookies(n):
     # Your code here
     # pass 
-    if n <= 0: 
-        return 1 
-    if n == 1: 
+    # change to be using elif's to run faster because it doesn't need to check the rest of the if's (but only if i'm not returning)
+    if n < 0: 
+        return 0
+    if n == 0: 
         return 1 
     if n == 2: 
         return 2 
